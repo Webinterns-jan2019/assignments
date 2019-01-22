@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	height:100vh;
+	font-family:'Roboto',sans-serif;
+	background: linear-gradient(#fff000, #ff0000);
+	}
+.Panel{
+	width:70%;
+	height:5%;
+	background: #ffffff;
+	display: flex;
+	/*position: absolute;*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/* border-radius:20px;*/
+}
+.leftPanel{
+		width:50%;
+		height:5%;
+		text-align:left;
+		/* padding-top: 50px;*/
+	}
+.rightPanel{
+		width:50%;
+		height:5%;
+		text-align:right;
+		margin-top:2px;
+		margin-bottom:10px;
+		margin-right:5px;
+}
+/*.imageClass{
+	width:70%;
+}
+input{
+		padding:7px;
+		margin-top: 25px;
+		width:77%;
+		border-radius: 15px;
+		border: none;
+		border: 1px solid lightgray;
+		box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}*/
+
+button{
+/* margin-top:5px;*/
+	background:white;
+	
+	padding:9px 30px;
+	color:black;
+	border:none;
+	/* border-radius: 2px:*/
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1)
+}
+@media only screen and (max-width:600px){
+/* body{
+	background:black;
+	
+	}*/
+.Panel{
+	width:100%;
+	display: block;
+	text-align:center;
+}
+.leftPanel{
+		width:100%;
+		height:50%;
+		
+	}
+.rightPanel{
+		windows:100%;
+		height:50%;
+		
+}
+.imageClass{
+	width:25%;
+	}
+}
+button:hover{
+	background:#ff0000;
+}
+@media only screen and (max-width:772px){
+/* body{
+	background:black;
+	
+	}*/
+.Panel{
+	width:80%;
+	display: block;
+	text-align:center;
+}
+.leftPanel{
+		width:100%;
+		height:auto;
+		
+	}
+.rightPanel{
+		width:100%;
+		height:auto;
+		
+	}
+.imageClass{
+	width: 25%;
+	}
+}
