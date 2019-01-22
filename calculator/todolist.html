@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>to do list</title>
+    </head>
+    <style type="text/css">
+    button{
+        float: right;
+        height: 07%;
+    }
+    ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+  .labelStyle{
+
+      color: grey;
+      text-decoration: line-through;
+  }  
+    .text
+    {
+        border: 20%;
+        margin-right: 20px;
+    }
+    fieldset{
+        box-align: center;
+        position: relative;
+        margin-left: 300px;
+        margin-right: 20%;
+        /* margin-top: 50%;
+        margin-bottom: 50%; */
+    }
+    input[type = text] {
+    position: relative;
+    /* display: block; */
+    width: 87%;
+    height: 07%;
+    /* margin: 5px auto; */
+    font-size: 20px;
+    /* padding: 10px; */
+    box-shadow: 4px 0px 12px black inset;
+  }
+  a{
+      float: right
+  }
+  .body_container{
+      overflow: scroll;
+  }
+
+    </style>
+    
+    <body>
+        <!-- <form> -->
+            <fieldset>
+              
+                    
+                
+                
+                        <h1>TODO LIST</h1>
+                    
+                    <hr/>
+                    
+                       
+                        <input type="text" placeholder="NEW TO DO LIST" id="text" class="text">
+                        <button id="but">CLEAR</button> <br/></li>
+                      
+
+                            <div class="body_container">
+                                    <ul id="a">
+                                <li>
+                                <h5><input type="checkbox" id="check0"><label>Eat Breakfast</label>
+                                    <a class="deleteStyle" href="" id="delete0">Delete</a></h5>
+                                <br/><hr/></li>
+                                <li><h5><input type="checkbox" id="check1"><label>Feed The Cat</label><a class="deleteStyle" id="delete1" href="">Delete</a></h5>
+                                   
+                                <br/><hr/></li>
+                            </ul>   
+                            </div>
+                        
+                   
+            </fieldset>
+        
+        
+    <!-- </form>  -->
+    <script type="text/javascript" src="todo.js">
+    
+        </script>
+    </body>
+</html>  
