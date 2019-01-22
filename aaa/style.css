@@ -1,0 +1,15 @@
+.container ul{
+    padding: 0px;
+    margin: 0px;
+
+}
+.container ul li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 300px;
+    background:rgb(30, 81, 156);
+    margin: 20px 20px 0px;
+    padding: 10px;
+    
+}
