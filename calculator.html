@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            .container{
+                width:30vw;
+                height:30vh;
+                background-color:gray;
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+            }
+            .contain1{
+                height: 20px;
+                width:100%;
+                background-color: blue;
+            }
+            .contain2{
+                width:100%;
+                height: 50%;
+                background-color: blue;
+            }
+            .contain3{
+                height: 30vh;
+                width: 100%;
+                background-color: yellow;
+                padding-top:  10px;
+            }
+            .b1{
+                height: 30px;
+                width: 50px;
+            
+            }
+            .b2{
+                height: 30px;
+                width:40px;
+            }
+
+            .disp{
+                position: absolute;
+                width: 100%;
+                height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="contain1"> </div>
+            <div class="contain2">
+                <input type="text" id="dis" name="dis" class="disp">
+            </div>
+            <div class="contain3">
+                <button class="b2" onclick="dis.value+='+'">+</button>
+                <button class="b2" onclick="dis.value+='-'">-</button>
+                <button class="b2" onclick="dis.value+='*'">*</button>
+                <button class="b2" onclick="dis.value+='/'">/</button>
+                <button class="b2" onclick="dis.value=eval(dis.value)">=</button>
+                <button class="b1" onclick="dis.value+='1'">1</button>
+                <button class="b1" onclick="dis.value+='2'">2</button>
+                <button class="b1" onclick="dis.value+='3'">3</button><br>
+                <button class="b1" onclick="dis.value+='4'">4</button>
+                <button class="b1" onclick="dis.value+='5'">5</button>
+                <button class="b1" onclick="dis.value+='6'">6</button><br>
+                <button class="b1" onclick="dis.value+='7'">7</button>
+                <button class="b1" onclick="dis.value+='8'">8</button>
+                <button class="b1" onclick="dis.value+='9'">9</button><br>
+                <button class="b1" onclick="dis.value+='0'">0</button>
+            </div>
+        </div>
+    </body>
+</html>

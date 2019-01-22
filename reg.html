@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="reg1.css">
+    <title>Register Form</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: blue;
+            }
+           @media only screen and (max-width: 600px){
+               body{
+                   background-color: red;
+               }
+                }
+               @media only screen and (min-width: 1000px){
+               body{
+                   background-color:yellow;
+               }
+           } 
+            </style>
+        <div class="res">
+    <form>
+    <table>
+    <tr>
+    <td>
+        
+   <p> Name:</p>
+    </td>
+    <td>
+    <input type="text"  placeholder="Name" name="">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Password:</p>
+    </td>
+    <td>
+    <input type="Password" placeholder="Password" name="">
+    </td>   
+    </tr>
+    <tr>
+        <td>
+            <p>USN:</p>
+        </td>
+        <td>
+            <input type="USN" placeholder="USN" name="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Gender:</p> 
+        </td>
+        <td>
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>College:</p>
+        </td>
+        <td>
+            <select>
+                <option>Choose any option</option>
+                <option>ShreeDevi Institute of Technology</option>
+                <option>SIT</option>
+                <option>VVCE</option>
+                <option>RIT</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>
+            Email:
+        </p>
+        </td>
+        <td>
+            <input type="email" placeholder="Email" name="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <p>Phone no:</p>
+        </td>
+        <td>
+            <select>
+                <option>+91</option>
+                <option>+977</option>
+                <option>+92</option>
+                <option>+98</option>
+                <option>981</option>
+                <option>982</option>
+                <option>983</option>
+            </select>
+            <input type="Phone" placeholder="98480*****" name="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+         <p>Facilities:<br></p>
+        </td>
+        <td>
+            <input type="checkbox" id="Facilities1" name="Facilities1" value="College Bus">
+            <label for="Facilities1">College Bus</label> 
+            <input type="checkbox" id="Facilities2" name="Facilities2" value="Free Wifi">
+            <label for="Facilities1">Free Wifi</label>
+            <input type="checkbox" id="Facilities3" name="Facilities3" value="Hostel">
+            <label for="Facilities1">Hostel</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="submit" name="">
+        </td>
+    </tr>
+    </table>
+    </form>
+        </div>
+    </body>
+    </html>
