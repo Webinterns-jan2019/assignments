@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+        #clear{
+            width: 300px;
+            height: 400px;
+            margin: auto;
+        }
+        </style>
+        <title>calculater</title>
+         <div class="formstyle">        
+       <form name="calci">
+           <input type="text" name="answer"><br></br>
+           <input type="button"  name="btn7" value="7" onclick="answer.value += '7'">
+           <input type="button" name="btn8" value="8" onclick="answer.value += '8'">
+           <input type="button" name="btn9" value="9" onclick="answer.value += '9'">
+           <input type="button" name="btn+" value="+" onclick="answer.value += '+'"></br></br>
+
+
+           <input type="button" name="btn4" value="4" onclick="answer.value += '4'">
+           <input type="button" name="btn5" value="5" onclick="answer.value += '5'">
+           <input type="button" name="btn3" value="3" onclick="answer.value += '3'">
+           <input type="button" name="btn-" value="-" onclick="answer.value += '-'"></br></br>
+
+
+           <input type="button" name="btn3" value="1" onclick="answer.value += '1'">
+           <input type="button" name="btn2" value="2" onclick="answer.value += '2'">
+           <input type="button" name="btn9" value="3" onclick="answer.value += '3'">
+           <input type="button" name="btn/" value="/" onclick="answer.value += '/'"></br></b>
+           <input type="button" name="btn0" value="0" onclick="answer.value += '0'">
+           <input type="button" name="btn." value="." onclick="answer.value += '.'">
+           <input type="button" name="btn%" value="%" onclick="answer.value += '%'">
+           <input type="button" name="btn=" value="=" onclick="answer.value = eval(answer.value)">
+           <input type="button" name="clear all" value="C" onclick="answer.value =''">  
+        </form>
+       </div>
+     </body>
+   </head>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            function insert(num){
+                document.forms.textview.value=document.forms.textview.value+num
+            }
+            </script>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                .button{
+                    width: 50;
+                    height: 50;
+                    font-size: 25;
+                    margin: 2;
+                    cursor: pointer;
+                }
+                .textview{
+                    widows: 223;
+                    margin: 5;
+                    font-size: 25;
+                    padding: 5;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="main">
+            <form name="form">
+                <input class="textview">
+            </form>
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="C"onclick="answer.value =''"></td>
+                    <td><input class="button" type="button" value="<" onclick="answer.value += '<'"></td>
+                    <td><input class="button" type="button" value="/" onclick="answer.value += '/'"></td>
+                    <td><input class="button" type="button" value="X" onclick="answer.value += 'X'"></td>
+
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="answer.value += '7'"></td>
+                    <td><input class="button" type="button" value="8" onclick="answer.value += '8'"></td>
+                    <td><input class="button" type="button" value="9" onclick="answer.value += '9'"></td>
+                    <td><input class="button" type="button" value="." onclick="answer.value += '.'"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="answer.value += '4'"></td>
+                    <td><input class="button" type="button" value="5" onclick="answer.value += '5'"></td>
+                    <td><input class="button" type="button" value="6" onclick="answer.value += '6'"></td>
+                    <td><input class="button" type="button" value="+" onclick="answer.value += '+'"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="answer.value += '1'"></td>
+                    <td><input class="button" type="button" value="2" onclick="answer.value += '2'"></td>
+                    <td><input class="button" type="button" value="3" onclick="answer.value += '3'"></td>
+                    <td><input class="button" type="button" value="=" onclick="answer.value = eval(answer.value)"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
