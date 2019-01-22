@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style type="TEXT/CSS">
+        .clockstyle{
+            font-size: 150px;
+            margin: auto;
+            padding: 10px;
+            color: brown;
+            font-weight: bold;
+            text-align: center;
+        }
+        </style>;
+    </head>
+    <body>
+        <div id="clockdisplay" class="clockstyle"></div>
+        <script type="text/javascript" lang="javascript">
+        function renderTime(){
+            var currentTime = new Date();
+            var diem = "AM";
+            var h = currentTime.getHours();
+            var m = currentTime.getMinutes();
+            var s = currentTime.getSeconds();
+            
+            if(h == 0)
+            {
+                h = 12;
+            }
+            else if(h>12)
+            {
+                h = h - 12;
+                diem = "PM";
+            }
+            if(h < 10)
+            {
+                 h = "0"+h;
+            }
+            if(m < 10)
+            {
+                m = "0" + m;
+            }
+            if(s < 10)
+            {
+                s = "0" + s;
+            }
+            var myclock = document.getElementById('clockdisplay')
+            myclock.textContent = h + ":" + m + ":" + s + "  diem";
+            myclock.innerText = h + ":" + m + ":" + s + "  diem";
+            setTimeout('renderTime()',1000)
+        }
+        renderTime();
+        </script>
+    </body>
+</html>
