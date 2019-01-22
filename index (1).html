@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To-Do</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css"/>
+		<!-- <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"/> -->
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "header">
+				<h2>To-Do List</h2>
+			</div>
+			<div class = "itemInput">
+				<input id = "inputBox" type = "text" placeholder = "New To-Do Item"/>
+				<input type = "button" id = "clear" value = "CLEAR"/>
+			</div>
+			<div class = "itemContainer">
+				<ul id = "list">
+					<li><input type = "checkbox" id = "checkbox0"/><label>Eat</label><a href = "#" class = "delete" id = "delete0">Delete</a></li>
+					<li><input type = "checkbox" id = "checkbox1"/><label>Sleep</label><a href = "#" class = "delete" id = "delete1">Delete</a></li>
+				</ul>
+			</div>
+		</div>
+		<script type = "text/javascript" src ="script.js"></script>
+	</body>
+</html>

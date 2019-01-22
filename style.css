@@ -1,0 +1,67 @@
+.container{
+	position : absolute;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
+	border: 1px solid #F8F8F7;
+	border-radius: 5px;
+	width: 35vw;
+	height: 60vh;
+	padding: 1%;
+	margin: auto;
+	background-color: #F8F8F7;
+	overflow: hidden;
+	overflow-y: scroll;
+	box-shadow: 2px 2px 5px grey;
+	/*margin : 9% auto;
+	text-align : center;*/
+	
+}
+.header h2{
+	padding: 2px;
+	float: left;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 0.5vh;
+	margin-top: 0.5vh;
+	font-family: 'Slabo 27px', serif;
+	letter-spacing: 0.1vw;
+	border-bottom: 1px solid black;
+}
+.itemInput :first-child{
+	margin-top: 0.5vh;
+	padding: 1.5%;
+	border-radius: 5px;
+	border: 1px solid grey;
+	width: 27vw;
+}
+.itemInput :last-child{
+	margin-left: 0.5vw;
+	padding: 1.5%;
+	border-radius: 5px;
+	border: 1px solid green;
+	background: green;
+	color: white;
+}
+
+.itemInput :last-child:hover{
+	color: green;
+	background: white;
+}
+.itemContainer ul{
+	padding : 0px;
+}
+.itemContainer li{
+	text-align : justify;
+	list-style-type : none;
+	border-bottom: 1px solid black;
+	margin-bottom: 1vw;
+}
+.delete{
+	float : right;
+}
+.labelStyle{
+	color : grey;
+	text-decoration : line-through;
+}
