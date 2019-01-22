@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+ 
+    td
+    {
+        color: aliceblue
+    }
+    div{box-shadow: crimson;}
+    table {align:center}
+    input
+    {
+        border-radius: 20px
+    }
+    select{border-radius: 20px;}
+  
+   
+    fieldset {
+    margin-left: 300px;
+    margin-right: 300px ;
+    background:rgb(119, 16, 160);
+    border-radius: 30px;
+    margin-top:50px;
+    box-shadow: 10px 10px 90px;
+    }
+    body 
+    {
+        /* background-image: url("blue.jpg") */
+        background-color: brown;
+        
+    }
+     @media only screen and (max-width: 600px) {
+     body {
+         background-color: rgb(19, 7, 87);
+    }
+    </style>
+</head>
+ <body>
+    <form >
+        <div class="container">
+        <fieldset>
+            <legend></legend>
+                <table align="center" cellpadding = "10">
+                    <tr>
+                        <td><b>NAME:</b></td>
+                        <td><input type="text" name="First_Name" maxlength="30"/>
+
+</td>
+</tr>
+ 
+
+<tr>
+<td><b>PASSWORD:</b></td>
+<td><input type="PASSWORD" name="Pass" maxlength="30"/>
+
+</td>
+</tr>
+ 
+
+<tr>
+<td><b>USN:</b></td>
+<td><input type="text" name="usn" maxlength="100" /></td>
+</tr> 
+
+<tr>
+<td><b>GENDER:</b></td>
+<td>
+    
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+</tr>
+<tr>
+    <td><b>COLLEGE:</b></td>
+         
+        <td>
+        <select name="COLLEGE:" id="COLL">
+        <option value="-1">CHOOSE COLLEGE:</option>
+        
+        <option value="1">SDIT</option>
+        <option value="2">SRINIVAS</option>
+        <option value="3">SAHYADRI</option>
+         
+        <option value="4">SDM</option>
+        <option value="5">CANARA</option>
+        <option value="6">KVG</option>
+        <option value="7">CITE</option>
+        
+</tr>
+<tr>
+    <td><b>EMAIL ID:</b></td>
+    <td><input type="text" name="Email_Id" maxlength="100" /></td>
+</tr>
+
+<tr>
+    <td><b>FACILITIES:</b></td>
+   
+   <td><input type="checkbox">COLLEGE BUS</td>
+   <td><input type="checkbox">WIFI</td>
+     <td><input type="checkbox">HOSTEL</td>
+</tr>
+<tr>
+    <td><b>ADDRESS:</b> <br /><br /><br /></td>
+    <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+        <input type="button" value="CANCEL">
+        <input type="button" value="SUBMIT">
+        </td>
+        </tr>
+ 
+
+    
+
+</table>
+
+</fieldset>
+</div>
+ 
+</form>
+ 
+</body>
+</html>
